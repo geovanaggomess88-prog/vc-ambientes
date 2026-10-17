@@ -136,6 +136,14 @@ h1 {
   }
 }
 
+/* Galeria de projetos */
+.carousel-inner > .item > img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 /* Convite final */
 .cta {
   background-color: var(--grafite);

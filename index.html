@@ -26,6 +26,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#etapas">Como trabalhamos</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
           <li><a class="link-whats" href="#">WhatsApp</a></li>
         </ul>
@@ -91,6 +92,40 @@
   </div>
 </section>
 
+<!-- GALERIA DE PROJETOS -->
+<section id="projetos" class="container secao">
+  <h2 class="titulo-secao">Nossos projetos</h2>
+  <div id="carousel-projetos" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-projetos" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-projetos" data-slide-to="1"></li>
+      <li data-target="#carousel-projetos" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Troque foto1.jpg, foto2.jpg e foto3.jpg na pasta img por fotos dos seus projetos -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./img/foto1.jpg" alt="Projeto 1">
+      </div>
+      <div class="item">
+        <img src="./img/foto2.jpg" alt="Projeto 2">
+      </div>
+      <div class="item">
+        <img src="./img/foto3.jpg" alt="Projeto 3">
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#carousel-projetos" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-projetos" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Próxima</span>
+    </a>
+  </div>
+</section>
+
 <!-- CONTATO -->
 <section id="contato" class="cta">
   <div class="container text-center">
@@ -112,7 +147,7 @@
 <script src="./bootstrap/js/bootstrap.min.js"></script>
 <script>
   // TROQUE AQUI pelo número do WhatsApp: 55 + DDD + número, só dígitos. Exemplo: 5511987654321
-  var NUMERO_WHATSAPP = "55DDNUMERO";
+  var NUMERO_WHATSAPP = "5512992113129";
   var MENSAGEM = "Olá! Gostaria de conversar sobre um projeto de ambientes planejados.";
 
   $(".link-whats").attr({
