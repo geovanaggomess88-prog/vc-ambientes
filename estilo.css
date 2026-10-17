@@ -1,0 +1,202 @@
+/* Identidade visual - VC Ambientes Planejados
+   Para mudar as cores do site inteiro, altere só os valores abaixo. */
+:root {
+  --grafite: #2b2d2f;     /* grafite profundo: menu, textos e faixa final */
+  --madeira: #a47148;     /* madeira natural: destaques e botões */
+  --areia: #e3d6c0;       /* areia: faixa das etapas */
+  --offwhite: #f7f4ee;    /* off-white: fundo da página */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--offwhite);
+  color: var(--grafite);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--grafite);
+}
+
+h1 {
+  font-size: 38px;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+/* Menu */
+.navbar-default {
+  background-color: var(--grafite);
+  border-color: var(--grafite);
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: var(--offwhite);
+}
+.navbar-default .navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: var(--areia);
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: var(--areia);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: var(--madeira);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: var(--offwhite);
+}
+.navbar-default .navbar-collapse {
+  border-color: #3d4043;
+}
+
+/* Seção Sobre */
+.secao {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.texto-destaque {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+.img-sobre {
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(43, 45, 47, 0.18);
+}
+
+/* Botão de WhatsApp dentro do site */
+.btn-whats {
+  background-color: var(--madeira);
+  border-color: var(--madeira);
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.btn-whats:hover,
+.btn-whats:focus {
+  background-color: #8a5c38;
+  border-color: #8a5c38;
+  color: #ffffff;
+}
+
+/* Etapas */
+.faixa {
+  background-color: var(--areia);
+  padding: 60px 0;
+}
+.titulo-secao {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.etapa {
+  background-color: #ffffff;
+  border-top: 4px solid var(--madeira);
+  border-radius: 4px;
+  padding: 24px 22px;
+  margin-bottom: 30px;
+}
+.etapa h3 {
+  font-size: 20px;
+  margin-top: 14px;
+}
+.etapa p {
+  margin-bottom: 0;
+}
+.numero {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--grafite);
+  color: var(--offwhite);
+  font-weight: bold;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .etapa {
+    min-height: 290px;
+  }
+}
+
+/* Convite final */
+.cta {
+  background-color: var(--grafite);
+  color: var(--offwhite);
+  padding: 70px 0;
+}
+.cta h2 {
+  color: var(--offwhite);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.cta-pergunta {
+  font-size: 20px;
+  color: var(--areia);
+}
+.cta .btn {
+  margin-top: 20px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #1f2123;
+  color: var(--areia);
+  text-align: center;
+  padding: 18px 0;
+}
+.rodape p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Botão flutuante do WhatsApp */
+.whats-flutuante {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1000;
+  background-color: #25d366;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.whats-flutuante:hover,
+.whats-flutuante:focus {
+  background-color: #1ebe5b;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Telas pequenas (celular) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 30px;
+  }
+  .secao {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .img-sobre {
+    margin-top: 30px;
+  }
+}
